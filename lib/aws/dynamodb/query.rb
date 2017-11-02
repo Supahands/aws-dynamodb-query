@@ -72,7 +72,6 @@ module Aws
               return result
             end
 
-            puts '*** SUCCESS querying database'
             # success => parse returned json
             json = Yajl::Parser.new.parse(res.body)
 
